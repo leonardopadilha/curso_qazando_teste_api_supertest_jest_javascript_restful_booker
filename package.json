@@ -1,0 +1,17 @@
+{
+  "name": "supertest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "scenario": "jest --testNamePattern="
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
+  }
+}
