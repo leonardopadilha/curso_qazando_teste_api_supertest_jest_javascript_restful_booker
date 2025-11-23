@@ -1,6 +1,8 @@
 name: Run Tests PR - PUSH
 
 on:
+    workflow_dispatch:
+    
     push:
         branches: [main, master]
 
