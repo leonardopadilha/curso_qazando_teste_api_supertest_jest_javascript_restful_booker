@@ -42,12 +42,39 @@ npm run scenario "cadastrar uma reserva"
 
 ```
 supertest/
+├── .github/
+│   └── workflows/
+│       └── test.yml          # Pipeline CI/CD GitHub Actions
 ├── tests/
 │   ├── getReserva.test.js    # Testes para GET /booking
 │   └── postReserva.test.js   # Testes para POST /booking
 ├── package.json
 └── README.md
 ```
+
+## 🔄 CI/CD - GitHub Actions
+
+O projeto possui uma pipeline automatizada configurada no GitHub Actions que executa os testes automaticamente.
+
+### Quando a pipeline é executada?
+
+A pipeline é acionada automaticamente quando há:
+- **Push** para as branches `main` ou `master`
+
+### O que a pipeline faz?
+
+1. ✅ Faz checkout do código do repositório
+2. ✅ Configura o ambiente Node.js (versão 14)
+3. ✅ Instala as dependências do projeto
+4. ✅ Executa todos os testes automatizados
+
+### Status da Pipeline
+
+Você pode acompanhar o status da pipeline na aba **Actions** do repositório no GitHub. A pipeline garante que todos os testes passem antes de fazer merge para a branch principal.
+
+### Arquivo de Configuração
+
+A configuração da pipeline está localizada em `.github/workflows/test.yml`.
 
 ## 🧩 Testes Implementados
 
